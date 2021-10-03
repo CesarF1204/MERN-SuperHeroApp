@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+
+.App {
+  text-align: center;
+  color: white;
+}
+body {
+  font-family: 'Exo';
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+table {
+  display: inline-block;
+  margin: 5px 0;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid white;
+  padding: 10px;
+}
+.percentage {
+  width: 75%;
+}
