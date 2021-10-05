@@ -11,9 +11,9 @@ loginRouter.post("/", (req, res) => {
     UserModel.findOne({email: email}, (err, user) => {
         if(user){
             if(password === user.password){
-                res.send({message:"login sucess",user: user})
+                res.send({message:"Login Success!", user: user})
             }else{
-                res.send({message:"wrong credentials"})
+                res.send({message:"Wrong credentials. Please try again."})
             }
         }else{
             res.send("not register")

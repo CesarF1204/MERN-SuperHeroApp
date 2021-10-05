@@ -12,7 +12,7 @@ registerRouter.get('/', async (req, res) => {
 
 registerRouter.post('/', async (req, res) => {
     await UserModel.create(req.body);
-    res.status(201).send(user);
+    res.send({message:"Registered Successfully!"})
 });
 
 module.exports = registerRouter;
