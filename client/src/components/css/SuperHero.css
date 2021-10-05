@@ -4,14 +4,11 @@
     height: 600px;
     perspective: 1000px;
     margin: 20px 20px 40px;
-    /* margin-bottom: 40px; */
     display: inline-block;
 }
 img {
     width: 500px;
     height: 500px;
-    /* margin-top: -21px; */
-    /* padding-bottom: 16px; */
     border-radius: 10%;
     box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
 }
@@ -45,7 +42,14 @@ img {
 progress {
     color: white;
 }
-input[type='text'] {
+.login, .register {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 270px;
+}
+input[type='text'], input[type='password'] {
     background: none;
     color: white;
     border: 1px solid teal;
@@ -53,12 +57,12 @@ input[type='text'] {
     width: 230px;
     border-radius: 4px;
 }
-input[type='text']:focus {
+input[type='text']:focus, input[type='password']:focus {
     outline: none;
     background-color: white;
     color: black;
 }
-.search-btn, .add-to-favorites, .remove-to-favorites, .clear-btn {
+.login-btn, .register-btn, .search-btn, .add-to-favorites, .remove-to-favorites, .clear-btn {
     border: 1px solid black;
     margin-left: 5px;
     padding: 8px 20px;
@@ -68,9 +72,17 @@ input[type='text']:focus {
     cursor: pointer;
     border-radius: 5px;
 }
-.search-btn:hover, .add-to-favorites:hover, .remove-to-favorites:hover, .clear-btn:hover {
+.login-btn:hover, .register-btn:hover, .search-btn:hover, .add-to-favorites:hover, .remove-to-favorites:hover, .clear-btn:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
+}
+.login-btn, .register-btn {
+    margin-top: 15px;
+    padding: 10px 50px;
+    background-color: #2196f3;
+}
+.register-btn {
+    background-color: green;
 }
 .remove-to-favorites {
     background-color: red;

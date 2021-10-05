@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import '../css/SuperHero.css';
 
+
 const completedEqual = (prevProps, nextProps) => {
     return prevProps.completed === nextProps.completed
 }
