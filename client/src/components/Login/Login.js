@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import axios from "axios";
 import {useHistory} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Login = ({setLoginUser}) => {
     const history = useHistory();
@@ -33,6 +34,7 @@ const Login = ({setLoginUser}) => {
                 <input type="password" id="password" name="password" value={user.password} onChange={handleChange} />
 
                 <button type="submit" className="login-btn" onClick={login}>Login</button>
+                <Link className="link" to="/register">No Account Yet? Register Now!</Link>
             </div>
         )
     }
